@@ -102,7 +102,7 @@ Displays full name if nil.")
 
 (defface calfw-blocks-overline
   '((t :overline t))
-    "Basic face for overline."
+  "Basic face for overline."
   :group 'basic-faces)
 
 
