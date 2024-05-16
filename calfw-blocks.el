@@ -27,6 +27,16 @@
   :group 'calfw-blocks
   :type 'list)
 
+(defcustom calfw-blocks-earliest-visible-time '(0 0)
+  "Earliest visible time in a day as list (HOURS MINUTES)."
+  :group 'calfw-blocks
+  :type 'list)
+
+(defcustom calfw-blocks-latest-visible-time '(24 0)
+  "Latest visible time in a day as list (HOURS MINUTES)."
+  :group 'calfw-blocks
+  :type 'list)
+
 (defcustom calfw-blocks-lines-per-hour 4
   "Number of lines per hour in a block."
   :group 'calfw-blocks
@@ -95,9 +105,6 @@ Displays full name if nil.")
     "Basic face for overline."
   :group 'basic-faces)
 
-
-(defvar calfw-blocks-earliest-visible-time '(0 0)
-  "Earliest visible time in a day as list (hours minutes).")
 
 
 (defvar calfw-blocks-nday-views-alist
