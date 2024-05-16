@@ -22,20 +22,24 @@
 (require 'calfw-org)
 ;; (require 'posframe)
 
+(defconst calfw-blocks-time-type
+  '(list (integer :tag "Hours  ") (integer :tag "Minutes"))
+  "Customization type for times.")
+
 (defcustom calfw-blocks-initial-visible-time '(8 0)
-  "Earliest initial visible time as list (hours minutes)."
+  "Earliest initial visible time as list (HOURS MINUTES)."
   :group 'calfw-blocks
-  :type 'list)
+  :type calfw-blocks-time-type)
 
 (defcustom calfw-blocks-earliest-visible-time '(0 0)
   "Earliest visible time in a day as list (HOURS MINUTES)."
   :group 'calfw-blocks
-  :type 'list)
+  :type calfw-blocks-time-type)
 
 (defcustom calfw-blocks-latest-visible-time '(24 0)
   "Latest visible time in a day as list (HOURS MINUTES)."
   :group 'calfw-blocks
-  :type 'list)
+  :type calfw-blocks-time-type)
 
 (defcustom calfw-blocks-lines-per-hour 4
   "Number of lines per hour in a block."
